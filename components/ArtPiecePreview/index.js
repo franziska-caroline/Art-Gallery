@@ -5,7 +5,13 @@ export default function ArtPiecePreview({ image, title, artist }) {
     <>
       <h2>{title}</h2>
       <figure>
-        <Image src={image} alt={title} height={450} width={450}></Image>
+        <Image
+          src={image}
+          alt={title}
+          layout="responsive"
+          height={1}
+          width={450}
+        ></Image>
         <figcaption>by {artist}</figcaption>
       </figure>
     </>
